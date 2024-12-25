@@ -1,3 +1,6 @@
 build:
   docker:
     worker: Dockerfile
+    ports:
+  - port: 8000
+    protocol: TCP
