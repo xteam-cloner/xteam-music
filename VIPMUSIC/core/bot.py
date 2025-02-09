@@ -6,6 +6,7 @@
 
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
+from pyrogram import InlineKeyboardMarkup, InlineKeyboardButton
 from aiohttp import ClientSession
 import config
 
