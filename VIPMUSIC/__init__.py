@@ -6,19 +6,19 @@ from VIPMUSIC.core.dir import dirr
 from VIPMUSIC.core.git import git
 from VIPMUSIC.core.userbot import Userbot
 from VIPMUSIC.core.youtube import vipboy
-from VIPMUSIC.misc import dbb, heroku, sudo
+from VIPMUSIC.misc import dbb, heroku
 
 from .logging import LOGGER
 
 dirr()
 
-git()
+#git()
 
 dbb()
 
 heroku()
 
-sudo()
+#sudo()
 
 vipboy()
 
