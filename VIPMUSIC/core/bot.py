@@ -4,22 +4,9 @@
 # Please see <https://github.com/THE-VIP-BOY-OP/VIP-MUSIC/blob/master/LICENSE>
 # All rights reserved.
 
-import asyncio
-import threading
-
-import uvloop
-from flask import Flask
-from pyrogram import Client, idle
-from pyrogram.enums import ChatMemberStatus
-from pyrogram.types import (
-    BotCommand,
-    BotCommandScopeAllChatAdministrators,
-    BotCommandScopeAllGroupChats,
-    BotCommandScopeAllPrivateChats,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-)
-
+from pyrogram import Client, errors
+from pyrogram.enums import ChatMemberStatus, ParseMode
+from aiohttp import ClientSession
 import config
 
 from ..logging import LOGGER
