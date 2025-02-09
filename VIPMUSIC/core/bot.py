@@ -4,6 +4,7 @@
 # Please see <https://github.com/THE-VIP-BOY-OP/VIP-MUSIC/blob/master/LICENSE>
 # All rights reserved.
 
+import uvloop
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 from aiohttp import ClientSession
