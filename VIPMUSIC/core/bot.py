@@ -4,27 +4,12 @@
 # Please see <https://github.com/THE-VIP-BOY-OP/VIP-MUSIC/blob/master/LICENSE>
 # All rights reserved.
 
-import uvloop
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 from aiohttp import ClientSession
 import config
 
 from ..logging import LOGGER
-
-uvloop.install()
-
-# Flask app initialize
-app = Flask(__name__)
-
-
-@app.route("/")
-def home():
-    return "Bot is running"
-
-
-def run():
-    app.run(host="0.0.0.0", port=8000, debug=False)
 
 
 # VIPBot Class
